@@ -17670,6 +17670,20 @@ div.jp-OutputPrompt {
 </div></section></section><section><section>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h3 id="Setup">Setup<a class="anchor-link" href="#Setup">&#182;</a></h3><ol>
+<li><a href="resources/sql-original.db">Download database</a></li>
+<li>Start SQLite <code>$sqlite3</code></li>
+<li>Open database <code>sqlite&gt; .open sql-original.db</code></li>
+<li>Setup headers
+<pre><code>sqlite&gt; .header on
+sqlite&gt; .mode column</code></pre>
+</li>
+</ol>
+
+</div>
+</div></section></section><section><section>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <h3 id="Schema-for-instructor-relation">Schema for instructor relation<a class="anchor-link" href="#Schema-for-instructor-relation">&#182;</a></h3><p>Recall the schema that we used previously:</p>
 <p><img src="figures/ERD-instructor.png" alt="Figure 2.9: Schema diagram for instructor relation"></p>
 <h4 id="SQL-data-definition">SQL data definition<a class="anchor-link" href="#SQL-data-definition">&#182;</a></h4><div class="highlight"><pre><span></span><span class="k">create</span> <span class="k">table</span> <span class="n">instructor</span>
